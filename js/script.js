@@ -1,9 +1,9 @@
 // creating typing animation using Typed.js Library
 var typed=new Typed(".typing",{
-    strings:["","web Developer.","competetive Programmer."],
+    strings:["","Web Developer.","Competetive Programmer.","Machine Learning Enthusiast."],
     typeSpeed:100,
-    BackSpeed:80,
-    cursorSpeed:10,
+    BackSpeed:40,
+    cursorSpeed:20,
     suffle:true,
     backDelay:500,
     loop:true,
