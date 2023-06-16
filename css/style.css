@@ -36,11 +36,9 @@ ul{
 }
 .section{
     background: var(--bg-black-900);
-    min-height: 100ch;
+    min-height: 100vh;
     display: block;
-   
      opacity: 1;
- 
     padding: 0 30px;
 }
 .hidden{
@@ -318,8 +316,8 @@ h3.my-profession{
     color: var(--text-black-700);
 }
 .about .about-content .personal-info{
-    flex:0 0 60%;
-    max-width: 60%;
+    flex:0 0 100%;
+    max-width: 100%;
     margin-top: 40px;
 }
 .about .about-content .personal-info .info-item{
@@ -407,7 +405,7 @@ text-transform: capitalize;
 .about .about-content h3.title{
     font-size: 24px;
     margin-bottom:30px ;
-    font-weight: 700px;
+    font-weight: 700;
     color: var(--text-black-700);
 }
 .about .about-content .timeline-box
@@ -471,8 +469,8 @@ text-transform: capitalize;
     color: var(--text-black-700);
 }
 /* service  */
-.service .container{
-
+.service .section{
+ padding-bottom: -100px !important;
 }
 .service .service-item{
     margin-bottom: 20px;
@@ -481,10 +479,12 @@ text-transform: capitalize;
 }
 .service .service-item .service-item-inner{
     background-color: var(--bg-black-100);
+    min-height: 375px;
     border-radius: 1px solid var(--bg-black-50);
     border-radius: 10px;
     padding: 20px 10px;
     text-align: center;
+    overflow: hidden;
     transition: all 0.3s ease;
 }
 .service .service-item .service-item-inner:hover{
@@ -544,17 +544,55 @@ text-transform: capitalize;
     max-width: 33.33%;
     margin-bottom: 30px;
 }
-.portfolio .portfolio-item-inner{
+.portfolio .portfolio-item .portfolio-item-inner{
     border: 6px solid var(--bg-black-100);
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
 }
-.portfolio .portfolio-item-inner .portfolio-img img{
+.portfolio .portfolio-item .portfolio-item-inner .portfolio-img img{
 width: 100%;
 display: block;
 }
+.social-media-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex: 0 0 50%;
+    margin: 10px;
+  }
+.portfolio .portfolio-item .portfolio-item-inner .social-media-link .fa{
+    font-size: 30px;
+    line-height: 30px;
+    color: var(--skin-color);
+}
+.portfolio .portfolio-item .portfolio-item-inner .title{
+    text-align: center;
+    font-size: 20px;
+   margin-top: 20px !important;
+    font-weight: 700;
+    color: var(--text-black-900);
+    margin: 5px;
+    
+}
+.portfolio .portfolio-item .portfolio-item-inner .description{
+    text-align: center;
+    margin-bottom: 2px !important;
+    font-size: 16px;
+    font-weight: 500;
+    color:var(--text-black-700);
+}
+.portfolio .portfolio-item .portfolio-item-inner .techstacks{
+text-align: center;
+margin: 5px;
+
+font-size: 18px;
+font-weight: 700;
+color: var(--text-black-700);
+}
+
 /*contact style*/
+
 .contact-title{
     color: var(--skin-color);
     text-align: center;
@@ -568,10 +606,10 @@ display: block;
     margin-bottom: 50px;
 }
 .contact .contact-info-item{
-    flex:0 0 25%;
-    max-width: 25%;
+    flex:0 0 33.33%;
+    max-width: 33.33%;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 20px;
 }
 
 .contact .contact-info-item .icon{
@@ -594,43 +632,7 @@ line-height: 25px;
 color: var(--text-black-700);
 font-weight: 400;
 }
-.contact .contact-form{
-    flex:0 0 100%;
-    max-width: 100%;
-}
-.contact .contact-form .col-6{
-    flex: 0 0 50%;
-    max-width: 50%;
-}
-.contact .contact-form .col-12{
-    flex: 0 0 100%;
-    max-width: 100%;
-}
-.contact .contact-form .form-item{
-    margin-bottom: 25px;
 
-}
-.contact .contact-form .form-item .form-control{
-    width: 100%;
-    height: 50px;
-    border-radius: 25px;
-    background: var(--bg-black-100);
-    border: 2px solid var(--bg-black-50);
-    padding: 10px 25px;
-    font-size: 16px;
-    color: var(--text-black-700);
-    transition: all 0.3s ease;
-}
-.contact .contact-form .form-item .form-control:focus{
-    box-shadow: 0 0 20px rgba(48,46, 77, 0.15);
-}
-.contact .contact-form .form-item textarea.form-control{
-    height: 150px;
-}
-.contact .contact-form .btn{
-    height: 50px;
-    padding: 0 50px;
-}
 /* media query
  */
  @media(max-width:1200px){
